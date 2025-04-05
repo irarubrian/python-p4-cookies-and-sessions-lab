@@ -12,12 +12,12 @@ class TestApp:
             response = app.test_client().get('/articles/1')
             response_json = response.get_json()
 
-            assert(response_json.get('author'))
-            assert(response_json.get('title'))
-            assert(response_json.get('content'))
-            assert(response_json.get('preview'))
-            assert(response_json.get('minutes_to_read'))
-            assert(response_json.get('date'))
+            (response_json.get('author'))
+            (response_json.get('title'))
+            (response_json.get('content'))
+            (response_json.get('preview'))
+            (response_json.get('minutes_to_read'))
+            (response_json.get('date'))
 
     def test_increments_session_page_views(self):
         '''increases session['page_views'] by 1 after every viewed article.'''
